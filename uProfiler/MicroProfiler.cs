@@ -22,8 +22,8 @@ namespace uProfiler
             if (settings == null)
                 settings = Config.DefaultSettings;
 
-            _stopwatch = stopwatch ?? Activator.CreateInstance(settings.StopwatchType) as IStopwatch;
-            _target = target ?? Activator.CreateInstance(settings.TargetType) as ITarget;
+            _stopwatch = stopwatch ?? settings.StopwatchInstance ?? Activator.CreateInstance(settings.StopwatchType) as IStopwatch;
+            _target = target ?? settings.TargetInstance ?? Activator.CreateInstance(settings.TargetType) as ITarget;
 
             Start();
         }

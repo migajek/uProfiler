@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>uProfiler</id>
+        <version>1.0.1</version>
+        <title>uProfiler</title>
+        <authors>Michał Gajek</authors>
+        <projectUrl>https://github.com/migajek/uProfiler</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>MicroProfiler for .NET. Wrap your code in (using new MicroProfiler()) and see the results.</description>
+    </metadata>
+    <files>
+        <file src="bin\Debug\uProfiler.dll" target="lib\uProfiler.dll" />
+    </files>
+</package>
